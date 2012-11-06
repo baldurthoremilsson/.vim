@@ -25,6 +25,7 @@ set list
 
 set bg=light
 set nu
+set noswapfile
 
 au VimLeave * :!clear
 
