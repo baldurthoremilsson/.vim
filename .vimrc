@@ -12,6 +12,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'python.vim'
 Bundle 'django.vim'
+Bundle 'baldurthoremilsson/baldur.vim'
 
 filetype plugin indent on
 
