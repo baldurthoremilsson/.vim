@@ -13,6 +13,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'python.vim'
 Bundle 'django.vim'
 Bundle 'baldurthoremilsson/baldur.vim'
+Bundle 'othree/html5.vim'
 
 filetype plugin indent on
 
