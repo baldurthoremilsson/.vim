@@ -30,6 +30,8 @@ set bg=light
 set nu
 set noswapfile
 
+set pastetoggle=<F2>
+
 au VimLeave * :!clear
 
 " Status line stuff
