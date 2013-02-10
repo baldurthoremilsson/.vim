@@ -14,6 +14,7 @@ Bundle 'python.vim'
 Bundle 'django.vim'
 Bundle 'baldurthoremilsson/baldur.vim'
 Bundle 'othree/html5.vim'
+Bundle 'jnwhiteh/vim-golang.git'
 
 filetype plugin indent on
 
