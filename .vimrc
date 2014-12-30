@@ -15,13 +15,28 @@ Plugin 'django.vim'
 Plugin 'baldurthoremilsson/baldur.vim'
 Plugin 'othree/html5.vim'
 Plugin 'jnwhiteh/vim-golang.git'
+Plugin 'kergoth/vim-bitbake'
+Plugin 'kien/ctrlp.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'bling/vim-airline'
 
 filetype plugin indent on
 
-" Other stuff
+" Easier window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
-nmap <C-S-j> :tabp<CR>
-nmap <C-S-k> :tabn<CR>
+" Toggle NERDTree with F3
+map <F3> :NERDTreeTabsToggle<CR>
+
+" Other stuff
+nmap <C-J> :bprevious<CR>
+nmap <C-K> :bnext<CR>
+set hidden
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
@@ -34,18 +49,5 @@ set pastetoggle=<F2>
 
 au VimLeave * :!clear
 
-" Status line stuff
-set laststatus=2        "always display the status line
-set statusline=%t       "tail of the filename
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}] "file format
-set statusline+=%h      "help file flag
-set statusline+=%m      "modified flag
-set statusline+=%r      "read only flag
-set statusline+=%y      "filetype
-set statusline+=%=      "left/right separator
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
-
-
+" Vim Airline
+let g:airline#extensions#tabline#enabled = 1
