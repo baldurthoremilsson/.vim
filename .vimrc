@@ -6,15 +6,15 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
-Bundle 'python.vim'
-Bundle 'django.vim'
-Bundle 'baldurthoremilsson/baldur.vim'
-Bundle 'othree/html5.vim'
-Bundle 'jnwhiteh/vim-golang.git'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'groenewege/vim-less'
+Plugin 'python.vim'
+Plugin 'django.vim'
+Plugin 'baldurthoremilsson/baldur.vim'
+Plugin 'othree/html5.vim'
+Plugin 'jnwhiteh/vim-golang.git'
 
 filetype plugin indent on
 
