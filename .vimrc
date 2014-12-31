@@ -21,6 +21,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 filetype plugin indent on
 
